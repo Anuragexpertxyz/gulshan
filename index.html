@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GULSHAN HARYANA</title>
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // ⚠️ APNA FB PIXEL ID YAHAN REPLACE KAREIN (Ex: '123456789012345')
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #122c34 0%, #080c10 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    /* Main Card Container */
+    .card {
+      background-color: #121418;
+      border: 1px solid #2a2e35;
+      border-radius: 20px;
+      padding: 30px 20px;
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Title */
+    .title {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    /* Yellow Highlight Badge */
+    .badge {
+      background-color: #d1f332;
+      color: #000000;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 25px;
+      line-height: 1.4;
+    }
+
+    /* Timer Text */
+    .timer-text {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #e0e0e0;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .timer-seconds {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    /* Main CTA Button */
+    .btn-telegram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #710909;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 16px 20px;
+      border-radius: 12px;
+      border: 2px solid #28a745;
+      box-shadow: 0 0 15px rgba(40, 167, 69, 0.6);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      animation: pulse 2s infinite;
+    }
+
+    /* Glow Animation for Button */
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+      }
+      50% {
+        box-shadow: 0 0 22px rgba(40, 167, 69, 0.9);
+      }
+      100% {
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+      }
+    }
+
+    .btn-telegram i {
+      font-size: 18px;
+      background: #ffffff;
+      color: #0088cc;
+      border-radius: 50%;
+      padding: 4px;
+    }
+
+    /* Disclaimer Section */
+    .disclaimer {
+      font-size: 11px;
+      color: #9aa0a6;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      padding: 0 5px;
+    }
+
+    /* Ads Info */
+    .ads-by {
+      font-size: 15px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .ads-by a {
+      color: #4c8bf5;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1 class="title">GULSHAN HARYANA</h1>
+    
+    <div class="badge">
+      Accurate analysis • Match Update • Right Prediction
+    </div>
+
+    <div class="timer-text">
+      FREE JOINING ENDS IN <span id="timer" class="timer-seconds">35s</span>
+    </div>
+
+    <!-- ⚠️ Apna Telegram Link href="..." me dalein aur onclick par Subscribe trigger hoga -->
+    <a href="https://t.me/your_channel_link" 
+       class="btn-telegram" 
+       target="_blank" 
+       onclick="trackSubscribeEvent()">
+      JOIN TELEGRAM FOR NEW UPDATE
+      <i class="fa-solid fa-paper-plane"></i>
+    </a>
+
+    <p class="disclaimer">
+      Disclaimer: This channel shares cricket updates, analysis, and general information for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify independently and act responsibly.
+    </p>
+
+    <div class="ads-by">
+      Ads by <a href="#">@Cricstar18</a>
+    </div>
+  </div>
+
+  <script>
+    // 1. One-Click Subscribe Event Tracking Function
+    function trackSubscribeEvent() {
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Subscribe');
+      }
+    }
+
+    // 2. Countdown Timer Script
+    let timeLeft = 35;
+    const timerElement = document.getElementById('timer');
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerElement.textContent = timeLeft + 's';
+
+      if (timeLeft <= 0) {
+        timeLeft = 35; // Reset loop
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
